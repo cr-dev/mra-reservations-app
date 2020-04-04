@@ -46,3 +46,9 @@ Adding DRF Serializers:
     class HomeView(TemplateView):
         template_name = 'reservations/home.html'
         <script src="{% static 'js/index.js' %}" charset="utf-8"></script>
+
+
+Configure Webpack:
+
+npm install -g @vue/cli
+npm install -g @vue/cli-init // bridge for legacy functionality i.e. vue init webpack
