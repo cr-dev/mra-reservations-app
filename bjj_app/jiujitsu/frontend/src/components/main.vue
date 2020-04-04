@@ -1,10 +1,17 @@
 <template>
-  <div class="intro">{{intro}}</div>
+  <div class="intro">
+    <p>{{intro}}</p>
+    <reservations></reservations>
+  </div>
 </template>
 
 <script>
+import Reservations from './reservations.vue'
 export default {
-  name: 'main',
+  components: {
+    Reservations
+  },
+  name: 'home',
   data () {
     return {
       intro: `Somos la primer filial de Roger Coelho BJJ en Costa Rica.

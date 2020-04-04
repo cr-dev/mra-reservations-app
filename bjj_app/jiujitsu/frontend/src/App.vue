@@ -33,8 +33,36 @@ img.logo {
 }
 
 .intro {
+  font-weight: bold;
   padding: 1rem;
   text-align: justify;
-  font-weight: bold;
+}
+
+.grid-container {
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 2rem 0rem;
+  padding: 1rem;
+}
+
+.card-item {
+  border: 1px solid #ccc;
+  display: block;
+  height: 200px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 200px;
+}
+
+.card-item:hover {
+  background-color: #ccc;
+}
+
+.card-item p {
+  margin: 4px;
 }
 </style>
