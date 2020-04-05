@@ -21,6 +21,28 @@ export default {
   justify-content: center;
   align-items: center;
 }
+
+.card-item p {
+  padding: .125rem;
+  margin: .125rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color:rgb(94, 0, 152);
+}
+
+.card-description {
+  font-size: 1.125rem;
+}
+
+header.main-title {
+  color: #600198;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
 img.logo {
   height: 250px;
   width: 250px;
@@ -51,15 +73,30 @@ img.logo {
 
 .card-item {
   border: 1px solid #ccc;
+  color: rgb(78, 78, 78);
   display: block;
+  flex-grow: 1;
   height: 200px;
-  margin-bottom: 1rem;
+  margin-left: .1rem;
+  margin-right: .1rem;
+  margin-top: .75rem;
+  max-width: 225px;
+  overflow: hidden;
+  overflow-wrap: break-word;
   padding: 1rem;
+  text-align: left;
   width: 200px;
 }
 
+.card-item i {
+  width: 30px;
+}
+
 .card-item:hover {
-  background-color: #ccc;
+  background-color: rgba(96, 1, 152, 0.5);
+  border: 1px solid #600198;
+  color: #000;
+  cursor: pointer;
 }
 
 .card-item p {
