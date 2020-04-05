@@ -13,6 +13,29 @@
                   <i class="fa fa-clock"></i>
                   {{moment(item.event_date).format('LLL')}}
                 </p>
+                <div class="card-buttons">
+                  <el-row>
+                    <el-col :span="12">
+                      <div class="grid-content">
+                       <el-button type="primary">Reservar</el-button>
+                    </div>
+                  </el-col>
+                    <el-col :span="12">
+                      <div class="grid-content">
+                        <el-select v-model="value" placeholder="Select">
+                          <el-option
+                            v-for="item in options"
+                            :key="item.value"
+                            :label="item.label"
+                            :value="item.value">
+                          </el-option>
+                        </el-select>
+                      </div>
+                    </el-col>
+                  </el-row>
+
+                </div>
+
               </div>
 
       </div>
@@ -59,7 +82,24 @@ export default {
         // {event_name: 'Test Reservation', 'event_date': '25-Ago-2020'},
         // {event_name: 'Test Reservation', 'event_date': '24-Ago-2020'},
         // {event_name: 'Test Reservation', 'event_date': '23-Ago-2020'}
-      ]
+      ],
+      options: [{
+        value: 'Option1',
+        label: 'Option1'
+      }, {
+        value: 'Option2',
+        label: 'Option2'
+      }, {
+        value: 'Option3',
+        label: 'Option3'
+      }, {
+        value: 'Option4',
+        label: 'Option4'
+      }, {
+        value: 'Option5',
+        label: 'Option5'
+      }],
+      value: ''
     }
   }
 }
